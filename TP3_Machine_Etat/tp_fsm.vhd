@@ -13,7 +13,8 @@ entity tp_fsm is
 		clk			: in std_logic; 
         resetn		: in std_logic;
         restart      : in std_logic;
-        V_Led       : out std_logic_vector(2 downto 0)
+        V_Led       : out std_logic_vector(2 downto 0);
+        V_led_oscillo : out std_logic_vector(2 downto 0) 
      );     
 end tp_fsm;
 
@@ -37,7 +38,7 @@ architecture behavioral of tp_fsm is
         -- Il faut déclarer le composant lorsque l'architecture de l'instance est décrite. 
     component counter_unit is
         generic (
-            constant Cst_delai : real := 200000000.0 
+            constant Cst_delai : real := 250000000.0 
                    );
         port (
             clk : in std_logic;
@@ -53,7 +54,7 @@ architecture behavioral of tp_fsm is
 -- L'instanciation du composant se réalise après le begin. 
 counter_unit_1  : counter_unit
        --generic map (
-       --   Cst_delai => 2000
+        -- Cst_delai => 2000.0
        -- )
         port map(
          clk	=> clk, 
@@ -81,7 +82,7 @@ counter_unit_1  : counter_unit
                           SV_nb_cycle <= SV_nb_cycle + "1";  -- S'il y à un coup d'horloge et que la sortie du compteur de temporisation est active, on incrément nb_cycle. 
                           SV_onoffLed <= not SV_onoffLed;
                           V_Led <= SV_Led and SV_onoffLed;
-
+                          V_led_oscillo <= SV_Led and SV_onoffLed;
                           if(SV_nb_cycle = SV_stop_cycle) then -- si SV_nb_cycle arrive à 6 il faut changer d'état. 
                                 S_Cht_state <= '1';
                                 SV_nb_cycle <= (others => '0'); 

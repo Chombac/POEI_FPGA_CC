@@ -6,7 +6,7 @@ use IEEE.math_real.all;
 
 entity counter_unit is
     generic (
-        constant Cst_delai : real := 200000000.0
+        constant Cst_delai : real := 250000000.0
         --Cst_nb_bascule : integer := 28;
 
      );
@@ -46,6 +46,6 @@ architecture behavioral of counter_unit is
 		end process;
 		
 	    --Partie combinatoire
-		S_end_counter <= '1' when V_data > V_cible else '0';
+	    S_end_counter <= '0' when V_data < V_cible else '1';
 		end_counter <= S_end_counter;
 end behavioral;
