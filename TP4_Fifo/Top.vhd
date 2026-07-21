@@ -26,14 +26,15 @@ use IEEE.NUMERIC_STD.ALL;
 entity TOP is
   Port (
   clk : in std_logic;
-  --resetn_general : in std_logic;
+  --resetn_general : in std_logic;   -- A commenter à l'implémentation par faute de bouton sur la carte. 
   
   led_r_top : out std_logic;
   led_g_top : out std_logic;
   led_b_top : out std_logic;
   
   Update_general_btn : in std_logic;
-  choix_couleur_btn : in std_logic
+  choix_couleur_btn : in std_logic  -- A décommenter à l'implémentation. 
+  --din_top : in std_logic_vector(1 downto 0)   -- A commenter à l'implémentation.
    );  
    end TOP;
 
@@ -49,7 +50,7 @@ architecture Behavioral of TOP is
     signal S_btn_choix_couleur : std_logic:= '0'; -- Signal de lecture de l'état du bouton de choix de couleur. 
     signal S_dout : std_logic_vector(1 downto 0); -- Signal interne de sortie de la mémoire. 
     signal S_color_code : std_logic_vector(1 downto 0); -- Signal interne du choix des diodes qui s'allument. 
-    signal S_din : std_logic_vector(1 downto 0); -- Signal d'entrée de la mémoire fifo
+    signal S_din : std_logic_vector(1 downto 0) := "10"; -- Signal d'entrée de la mémoire fifo
     signal S_end_cycle : std_logic:= '0'; -- Signal de fin de cycle 
     signal S_end_cycle_r : std_logic:= '0'; -- Signal de fin de cycle retardé pour permettre à la mémoire de s'actualiser. 
     
@@ -86,14 +87,15 @@ architecture Behavioral of TOP is
     
 begin
     
-    --S_resetn <= resetn_general;
+    --S_resetn <= not resetn_general;  -- A commenter à l'implémentation.
     S_reset <= not S_resetn;
-    S_btn_choix_couleur <= choix_couleur_btn;
+    S_btn_choix_couleur <= choix_couleur_btn;  -- A décommenter à l'implémentation
     S_update_btn <= Update_general_btn;
     led_r_top <= S_led_r;
     led_g_top <= S_led_g;
     led_b_top <= S_led_b;
-
+    --S_din <= din_top; -- A commenter à l'implémentation.
+    
     
     S_color_code <= "00" when S_buffer_MT_r = '1' else  S_dout;         	
     S_buffer_MT <= '1' when S_empty = '1' and  S_end_cycle = '1'else'0';
@@ -147,6 +149,8 @@ begin
         end if;
  
     end process;
+
+-- A dé commenter à l'implémentation.
 
 process(S_btn_choix_couleur)
 begin
