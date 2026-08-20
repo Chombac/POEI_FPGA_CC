@@ -6,7 +6,7 @@ use IEEE.math_real.all;
 
 entity counter_unit is
     generic (
-        constant Cst_delai : real := 43600.0 --Nb de coup d'horloge à compter. 
+        constant Cst_delai : real := 100000000.0 --Nb de coup d'horloge à compter. 
         --Cst_nb_bascule : integer := 28;
 
      );
