@@ -6,7 +6,7 @@ use IEEE.math_real.all;
 
 entity counter_unit is
     generic (
-        constant Cst_delai : real := 100000000.0 --Nb de coup d'horloge à compter. 
+        constant Cst_delai : real := 33000000.0 --Nb de coup d'horloge à compter. 33 000 000
         --Cst_nb_bascule : integer := 28;
 
      );
@@ -40,7 +40,6 @@ architecture behavioral of counter_unit is
 			    V_data <= V_data + "1";
 			      if (S_end_counter = '1') then 
 			         V_data <= (others => '0');
-			       	 V_data <= (others => '0');
 			      end if;
 			 end if;
 		end process;

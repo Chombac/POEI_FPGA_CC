@@ -47,7 +47,7 @@ architecture Behavioral of Led_driver is
     signal S_end_counter : std_logic;
     signal S_resetn : std_logic := '1';
     signal S_update : std_logic := '0';
-    signal S_led_r,S_led_g,S_led_b : std_logic;
+    signal S_led_r,S_led_g,S_led_b : std_logic:= '0';
     signal S_color_code : std_logic_vector(1 downto 0);
     signal S_color_code_MEM : std_logic_vector(1 downto 0):="00";
     
@@ -112,7 +112,7 @@ begin
 end process;
 
 
-process(current_state)
+process(current_state,S_color_code_MEM)
 begin
     case current_state is
         when led_off =>
@@ -135,8 +135,16 @@ begin
             elsif S_color_code_MEM = "11" then
                  S_led_r <= '0';
                 S_led_g <= '0';
-                S_led_b <= '1';             
+                S_led_b <= '1';  
+            else 
+                S_led_r <= '0';
+                S_led_g <= '0';
+                S_led_b <= '0';                          
             end if;
+        when others =>
+                S_led_r <= '0';
+                S_led_g <= '0';
+                S_led_b <= '0'; 
     end case; 
 end process; 
 
