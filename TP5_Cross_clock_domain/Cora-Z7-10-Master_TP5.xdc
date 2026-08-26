@@ -23,7 +23,7 @@ set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33} [get_ports {V_Led_B[2]}
 set_property -dict {PACKAGE_PIN M15 IOSTANDARD LVCMOS33} [get_ports {V_Led_B[0]}]
 
 # Buttons
-#set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports Update_general_btn]
+set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports restart_general]
 set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports reset_general]
 
 ## Pmod Header JA

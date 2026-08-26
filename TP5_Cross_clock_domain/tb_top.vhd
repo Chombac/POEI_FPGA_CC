@@ -36,7 +36,8 @@ entity tb_fsm_led_driver is
 end tb_fsm_led_driver;
 
 architecture Behavioral of tb_fsm_led_driver is
-
+    
+    signal S_restart_general_btn  : std_logic;
     signal S_reset_general_btn  : std_logic;
 	signal S_clk         : std_logic:='0';
 
@@ -52,6 +53,8 @@ architecture Behavioral of tb_fsm_led_driver is
     Port (
      clk : in std_logic;
      reset_general : in std_logic;
+     restart_general : in std_logic;
+
      V_led_A : out std_logic_vector(2 downto 0);
      V_led_B : out std_logic_vector(2 downto 0)
       );
@@ -63,6 +66,7 @@ dut : fsm_led_driver
     Port map(
      clk  => S_clk,
      reset_general => S_reset_general_btn,
+     restart_general => S_restart_general_btn,
      V_led_A => S_V_led_A,
      V_led_B => S_V_led_B
     );
@@ -76,11 +80,22 @@ end process;
 process
     begin
         S_reset_general_btn <= '0';
+        S_restart_general_btn <= '0';
+
         wait for 10*period;
         S_reset_general_btn <= '1';
         wait for 10*period;
         S_reset_general_btn <= '0';
+        
+        wait for 2 ms;
+        
+        S_restart_general_btn <= '0';
+        wait for 10*period;
+        S_restart_general_btn <= '1';
+        wait for 10*period;
+        S_restart_general_btn <= '0';
         wait;
+        
 end process;
 
 end Behavioral;

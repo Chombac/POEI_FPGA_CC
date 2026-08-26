@@ -6,15 +6,14 @@ use IEEE.math_real.all;
 
 entity counter_unit is
     generic (
-        constant Cst_delai : real := 33000000.0 --Nb de coup d'horloge à compter. 33 000 000
+        Cst_delai : real := 100000000.0 --Nb de coup d'horloge à compter. 33 000 000
         --Cst_nb_bascule : integer := 28;
-
      );
-
  port ( 
 		clk			: in std_logic; -- Signal d'Horloge
         end_counter	: out std_logic; -- Signal indiquant que la valeur cible à été atteinte. 
-        resetn      : in std_logic -- Signal de reset. 
+        resetn      : in std_logic; -- Signal de reset Asynchrone. 
+        restartn    : in std_logic  -- signal de restart synchrone. 
      );
 end counter_unit;
     
@@ -34,12 +33,13 @@ architecture behavioral of counter_unit is
 		--Partie sequentielle
 		process(clk,resetn)
 		begin
-		   if(resetn = '0') then   			 --Reset Asynchrone
+		   if(resetn = '0') then   			 --resetn Asynchrone
 			      V_data <= (others => '0');
 			elsif(rising_edge(clk)) then
-			    V_data <= V_data + "1";
-			      if (S_end_counter = '1') then 
+			      if (S_end_counter = '1' or restartn = '0') then 
 			         V_data <= (others => '0');
+			      else 
+			         V_data <= V_data + "1";
 			      end if;
 			 end if;
 		end process;

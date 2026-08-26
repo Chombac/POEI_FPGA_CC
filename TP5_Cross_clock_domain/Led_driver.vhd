@@ -32,20 +32,24 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Led_driver is
+generic(Gnr_Cst_delai : real := 100_000_000.0);
     Port ( clk : in STD_LOGIC;
            resetn : in STD_LOGIC;
+           restartn : in std_logic;
            color_code : in STD_LOGIC_VECTOR (1 downto 0);
            update : in STD_LOGIC;
            led_r : out STD_LOGIC;
            led_g : out STD_LOGIC;
            led_b : out STD_LOGIC;
            fin_tempo : out std_logic);
+           
 end Led_driver;
 
 architecture Behavioral of Led_driver is
 
     signal S_end_counter : std_logic;
     signal S_resetn : std_logic := '1';
+    signal S_restartn : std_logic := '1';
     signal S_update : std_logic := '0';
     signal S_led_r,S_led_g,S_led_b : std_logic:= '0';
     signal S_color_code : std_logic_vector(1 downto 0);
@@ -58,18 +62,20 @@ architecture Behavioral of Led_driver is
     
     
 component counter_unit is
-        --generic(constant Cst_delai : real := 200.0);
+        generic(Cst_delai : real);
         port(
         clk : in std_logic;
         resetn : in std_logic;
+        restartn: in std_logic;
         end_counter : out std_logic);
     end component counter_unit;
     
-
     
 begin
 
     S_resetn <= resetn;
+    S_restartn <= restartn;
+
     S_update <= update;
     S_color_code <= color_code;
     led_r <= S_led_r;
@@ -78,35 +84,40 @@ begin
     fin_tempo <= S_end_counter;
 
 counter_unit_1 : counter_unit
+    generic map(Cst_delai => Gnr_Cst_delai)
     port map(
         clk => clk,
         end_counter => S_end_counter,
-        resetn => S_resetn
+        resetn => S_resetn,
+        restartn => S_restartn
         );
 
-process(clk, S_resetn)
+process(clk,S_resetn)
 begin
         if(S_resetn ='0') then  -- Il faut toujours mettre les else dans les IF pour éviter les latchs, les état indéterminés. 
             current_state <= led_off;
             S_color_code_MEM <= "00";
             
         elsif(rising_edge(clk)) then
-            current_state <= next_state; -- Il faut conserver l'actualisation du current__state sur le next_state dans le rising_edge pour être plus flexible.
-
-            if S_end_counter = '1' then
-             
-                if current_state = led_off then
-                    next_state <= led_on;
-                elsif current_state = led_on then
-                    next_state <= led_off; 
+            if( S_restartn = '0') then
+                current_state <= led_off;
+                S_color_code_MEM <= "00";
+            else          
+                current_state <= next_state; -- Il faut conserver l'actualisation du current__state sur le next_state dans le rising_edge pour être plus flexible. 
+                if S_end_counter = '1' then             
+                    if current_state = led_off then
+                        next_state <= led_on;
+                    elsif current_state = led_on then
+                        next_state <= led_off; 
+                    end if;
+                else 
+                        next_state <= next_state;
                 end if;
-            else 
-                    next_state <= next_state;
-            end if;
-            
-            if S_update = '1' then 
-                S_color_code_MEM <= S_color_code;
-            end if;
+                
+                if S_update = '1' then 
+                    S_color_code_MEM <= S_color_code;
+                end if;
+           end if; 
        end if;
             
 end process;

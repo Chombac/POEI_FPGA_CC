@@ -26,15 +26,17 @@ use IEEE.numeric_std.all;  -- Ajout package de conversion de types.
  
 entity fsm_led_driver is
     generic(
-       Cst_nb_cycle : positive := 20; -- c'est le nombe de clignotement de led que l'on veux.
-       Cst_nb_tempo : positive := 10 
+       Cst_nb_cycle : positive := 20; -- c'est le nombe de temporisation avant de changer d'état de la machine à état.
+       Cst_nb_tempo : positive := 10; -- C'est le nombre de temporisation de l'horloge rapide qui stretch l'update
+       Top_cst_delai : real := 100_000_000.0  -- Coup d'horloge du compteur de temporisation
 );
   Port (
   clk : in std_logic; 
   V_Led_A : out std_logic_vector(2 downto 0);  --Vecteur de commande de la led A
   V_Led_B : out std_logic_vector(2 downto 0); --Vecteur de commande de la led RGB B
-
-  reset_general : in std_logic
+  
+  restart_general : in std_logic;  -- restart synchrone.
+  reset_general : in std_logic     -- reset Asynchrone. 
   
    );  
    end fsm_led_driver;
@@ -44,6 +46,9 @@ architecture Behavioral of fsm_led_driver is
     -- Signaux généraux
     signal S_reset : std_logic; 
     signal S_resetn : std_logic; 
+    
+    signal S_restart : std_logic:='0'; 
+    signal S_restartn : std_logic; 
     
     signal S_clk_A : std_logic:= '0';
     signal S_clk_B : std_logic:= '0';
@@ -63,7 +68,7 @@ architecture Behavioral of fsm_led_driver is
     --Gestion clignotement
     signal SV_Stop_cycle : std_logic_vector(4 downto 0);
     signal SV_nb_cycle : std_logic_vector(4 downto 0):= (others => '0'); 
-    signal SV_nb_tempo_CCD : std_logic_vector(3 downto 0):= (others => '0'); -- Str
+    signal SV_nb_tempo_CCD : std_logic_vector(3 downto 0):= (others => '0'); -- Vecteur de temporisation pour strech le signal d'update. 
     
     type state is (Etat_init, Etat_rouge, Etat_bleu, Etat_vert);
     signal current_state : state;
@@ -71,9 +76,11 @@ architecture Behavioral of fsm_led_driver is
  
     
     component Led_Driver is
+    generic(Gnr_Cst_delai : real);
     port(
            clk : in STD_LOGIC;
            resetn : in STD_LOGIC;
+           restartn : in STD_LOGIC;
            color_code : in STD_LOGIC_VECTOR (1 downto 0);
            update : in STD_LOGIC;
            led_r : out STD_LOGIC;
@@ -103,20 +110,25 @@ begin
     S_resetn <= not reset_general;
     S_reset <= reset_general;
     
+    S_restartn <= not restart_general;
+    S_restart <= restart_general;
+    
     PLL_1 : clk_PLL
     port map(
     clk_A => S_clk_A,
     clk_B => S_clk_B,
-    reset => S_reset,
+    reset => S_reset, --PLL sur le reset Asynchrone
     locked => S_locked,
     clk_pll => clk
     );
     
     
     Led_Driver_A : Led_Driver
+    generic map(Gnr_Cst_delai => Top_cst_delai)
     port map(
         clk => S_clk_A,
         resetn => S_resetn,   
+        restartn => S_restartn,
         color_code => S_color_code,
         update => S_update,
         led_r => SV_led_A(0),
@@ -126,11 +138,13 @@ begin
         );
         
         Led_Driver_B : Led_Driver
+        generic map(Gnr_Cst_delai => Top_cst_delai)
     port map(
         clk => S_clk_B,
-        resetn => S_resetn,   
+        resetn => S_resetn,
+        restartn => S_restartn,
         color_code => S_color_code,
-        update => S_update,
+        update => S_update_B,
         led_r => SV_led_B(0),
         led_g => SV_led_B(1),
         led_b => SV_led_B(2),
@@ -138,49 +152,62 @@ begin
         );
         
     -- Process synchrone
-    process(S_clk_A,S_resetn,S_locked)
+    process(S_clk_A,S_resetn)
     begin
-        if(S_resetn ='0' or S_locked = '0') then  -- Il faut toujours mettre les else dans les IF pour éviter les latchs, les état indéterminés. 
+        if(S_resetn ='0' ) then  -- Il faut toujours mettre les else dans les IF pour éviter les latchs, les état indéterminés. 
               S_update <= '0';   -- Sur rising edge clk et S_update géneral on le repasse à 0    
+              S_update_B <= '0';   -- Sur rising edge clk et S_update géneral on le repasse à 0    
+
               current_state <= Etat_init;
               next_state <= Etat_init;
               SV_nb_cycle <= (others => '0'); --Si le reset est à l'état 0, on réinitialise le nombre de cycle. 
               SV_nb_tempo_CCD <= (others => '0');
               
         elsif(rising_edge(S_clk_A)) then   
-                        
-            current_state <= next_state;
+            if (S_restartn = '0' or S_locked = '0') then
+                  S_update <= '1';   -- Sur rising edge clk et S_update géneral on le repasse à 0 
+                  S_update_B <= '1';    
+                  current_state <= Etat_init;
+                  next_state <= Etat_rouge;
+                  SV_nb_cycle <= (others => '0'); --Si le reset est à l'état 0, on réinitialise le nombre de cycle. 
+                  SV_nb_tempo_CCD <= std_logic_vector( to_unsigned(Cst_nb_tempo,4)) - "1"; -- Réinitialisation du compteur permettant d'étendre le signal d'update
 
-            if (SV_nb_tempo_CCD > "0000") then  --si est non nul, on le décremente jusqu'a 0
-                SV_nb_tempo_CCD <= SV_nb_tempo_CCD - "1";
-            else  -- Lorsque 0, update vaut 0
-                SV_nb_tempo_CCD <= SV_nb_tempo_CCD;
-                S_update <= '0';
-            end if;
-           
-             if (S_fin_tempo_A  = '1') then    -- Faut t'il mettre deux S_fin_tempo ? 
-               SV_nb_cycle <= SV_nb_cycle + "1";  
-             else
-                SV_nb_cycle <= SV_nb_cycle;
-             end if; 
-             
-             if(SV_nb_cycle > SV_stop_cycle) then -- si SV_nb_cycle arrive à 6 il faut changer d'état. 
-                SV_nb_cycle <= (others => '0'); 
-                S_update <= '1';
-                SV_nb_tempo_CCD <= std_logic_vector( to_unsigned(Cst_nb_tempo,4)) - "1";
-                
-                if current_state = Etat_init then
-                    next_state <= Etat_rouge;
-                elsif current_state = Etat_rouge then
-                    next_state <= Etat_bleu;
-                elsif current_state = Etat_bleu then
-                    next_state <= Etat_vert;
-                elsif current_state = Etat_vert then
-                    next_state <= Etat_rouge;
+            else            
+                current_state <= next_state;  -- Le changement d'état intervient à chaque coup d'horloge pour plus de flexibilité. 
+    
+    -- Strech du signal d'update pour le Cross clock domain. 
+                if (SV_nb_tempo_CCD > "0000") then  --si est non nul, on le décremente jusqu'a 0
+                    SV_nb_tempo_CCD <= SV_nb_tempo_CCD - "1";
+                else  -- Lorsque 0, update vaut 0
+                    SV_nb_tempo_CCD <= SV_nb_tempo_CCD;
+                    S_update_B <= '0';
                 end if;
-                
-             end if; 
-                
+               
+             -- A chaque fin de temporisation de l'horloge A, on incrémente le compteur de cycle 2 cycle = 1 clignotements. 
+                 if (S_fin_tempo_A  = '1') then    
+                   SV_nb_cycle <= SV_nb_cycle + "1";  
+                 else
+                    SV_nb_cycle <= SV_nb_cycle;
+                 end if; 
+                 
+                 if(SV_nb_cycle > SV_stop_cycle) then  -- Changement de couleur. 
+                    SV_nb_cycle <= (others => '0'); 
+                    S_update <= '1';
+                    S_update_B <= '1';
+                    SV_nb_tempo_CCD <= std_logic_vector( to_unsigned(Cst_nb_tempo,4)) - "1"; -- Réinitialisation du compteur permettant d'étendre le signal d'update
+                    
+                    if current_state = Etat_init then
+                        next_state <= Etat_rouge;
+                    elsif current_state = Etat_rouge then
+                        next_state <= Etat_bleu;
+                    elsif current_state = Etat_bleu then
+                        next_state <= Etat_vert;
+                    elsif current_state = Etat_vert then
+                        next_state <= Etat_rouge;
+                    end if;
+                    
+                 end if; 
+           end if;     
         end if;
     end process;
     
