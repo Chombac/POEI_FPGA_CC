@@ -22,29 +22,28 @@ architecture behavioral of counter_unit is
 	constant Cst_nb_bascule : integer :=  integer(ROUND(LOG(Cst_delai)/LOG(2.0)));
 	constant Cst_taille_vector : integer := Cst_nb_bascule -1;
 	--Declaration des signaux internes
-	signal V_data : std_logic_vector (Cst_taille_vector downto 0):= (others => '0');  --signal interne s'incrémentant à chaque coup d'horloge
+	signal V_data : std_logic_vector (Cst_taille_vector downto 0);  --signal interne s'incrémentant à chaque coup d'horloge
+	signal V_data_mem : std_logic_vector (Cst_taille_vector downto 0):= (others => '0');
 	signal V_cible : std_logic_vector (Cst_taille_vector downto 0);  --Lorsque cette valeur est atteinte, on réinitialise le compteur. 
 	signal S_end_counter : std_logic:= '0'; -- signal interne de fin de compteur
 	
 	begin
         V_cible <= std_logic_vector(to_unsigned(integer(Cst_delai),Cst_nb_bascule))-"1" ;  --convertion du décimal vers un vecteur binaire.
-        -- On enlève 1 car on compte à partir de 0
-        
-		--Partie sequentielle
 		process(clk,resetn)
 		begin
 		   if(resetn = '0') then   			 --resetn Asynchrone
-			      V_data <= (others => '0');
+			      V_data <= (others => '0');   --Reset enlevé pour passer le timing requirement. 
 			elsif(rising_edge(clk)) then
-			      if (S_end_counter = '1' or restartn = '0') then 
+			      if ((V_data_mem > V_cible - "1") or restartn = '0') then 
 			         V_data <= (others => '0');
+			         S_end_counter <= '1';
 			      else 
 			         V_data <= V_data + "1";
-			      end if;
+			         S_end_counter <= '0';
+			      end if;	    
 			 end if;
 		end process;
-		
-	    --Partie combinatoire
-		S_end_counter <= '1' when V_data > V_cible else '0';
 		end_counter <= S_end_counter;
+		V_data_mem <= V_data;
+
 end behavioral;

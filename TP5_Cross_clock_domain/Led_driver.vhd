@@ -32,7 +32,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity Led_driver is
-generic(Gnr_Cst_delai : real := 100_000_000.0);
+generic(Gnr_Cst_delai : real := 200.0);
     Port ( clk : in STD_LOGIC;
            resetn : in STD_LOGIC;
            restartn : in std_logic;

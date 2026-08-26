@@ -54,7 +54,7 @@ architecture Behavioral of fsm_led_driver is
     signal S_clk_B : std_logic:= '0';
         
     signal S_update : std_logic:= '0';
-    signal S_locked : std_logic := '0';
+    signal S_locked : std_logic;
     
     signal S_update_B : std_logic:= '0';
 
@@ -62,7 +62,7 @@ architecture Behavioral of fsm_led_driver is
     signal SV_led_B : std_logic_vector(2 downto 0):= (others => '0'); 
 
     signal S_color_code : std_logic_vector(1 downto 0); 
-    signal S_fin_tempo_A : std_logic;
+    signal S_fin_tempo_A : std_logic;    
     signal S_fin_tempo_B : std_logic;
 
     --Gestion clignotement
@@ -107,12 +107,12 @@ begin
     SV_stop_cycle <= std_logic_vector( to_unsigned(Cst_nb_cycle,5))- "1" ;
     --SV_nb_tempo_CCD <= std_logic_vector( to_unsigned(Cst_nb_tempo,4)) - "1";
     
-    S_resetn <= not reset_general;
+    S_resetn <= S_locked and (not reset_general);
     S_reset <= reset_general;
     
     S_restartn <= not restart_general;
     S_restart <= restart_general;
-    
+       
     PLL_1 : clk_PLL
     port map(
     clk_A => S_clk_A,
@@ -151,10 +151,11 @@ begin
         fin_tempo => S_fin_tempo_B
         );
         
+        
     -- Process synchrone
     process(S_clk_A,S_resetn)
     begin
-        if(S_resetn ='0' ) then  -- Il faut toujours mettre les else dans les IF pour éviter les latchs, les état indéterminés. 
+        if(S_resetn ='0') then  -- Il faut toujours mettre les else dans les IF pour éviter les latchs, les état indéterminés. 
               S_update <= '0';   -- Sur rising edge clk et S_update géneral on le repasse à 0    
               S_update_B <= '0';   -- Sur rising edge clk et S_update géneral on le repasse à 0    
 
@@ -164,17 +165,16 @@ begin
               SV_nb_tempo_CCD <= (others => '0');
               
         elsif(rising_edge(S_clk_A)) then   
-            if (S_restartn = '0' or S_locked = '0') then
+            if (S_restartn = '0') then -- Ok car normalement, la PLL n'est pas reset sur restart actif. 
                   S_update <= '1';   -- Sur rising edge clk et S_update géneral on le repasse à 0 
                   S_update_B <= '1';    
-                  current_state <= Etat_init;
+                  current_state <= Etat_rouge;
                   next_state <= Etat_rouge;
                   SV_nb_cycle <= (others => '0'); --Si le reset est à l'état 0, on réinitialise le nombre de cycle. 
                   SV_nb_tempo_CCD <= std_logic_vector( to_unsigned(Cst_nb_tempo,4)) - "1"; -- Réinitialisation du compteur permettant d'étendre le signal d'update
 
             else            
                 current_state <= next_state;  -- Le changement d'état intervient à chaque coup d'horloge pour plus de flexibilité. 
-    
     -- Strech du signal d'update pour le Cross clock domain. 
                 if (SV_nb_tempo_CCD > "0000") then  --si est non nul, on le décremente jusqu'a 0
                     SV_nb_tempo_CCD <= SV_nb_tempo_CCD - "1";
