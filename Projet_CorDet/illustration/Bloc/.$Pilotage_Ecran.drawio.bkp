@@ -1,0 +1,43 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="DjMbjgHOzP4yklzspIkV">
+    <mxGraphModel dx="1212" dy="736" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;movable=0;resizable=0;rotatable=0;deletable=0;editable=0;locked=1;connectable=0;" value="" vertex="1">
+          <mxGeometry height="210" width="236" x="294" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;" value="VGA_R" vertex="1">
+          <mxGeometry height="30" width="60" x="462" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;" value="VGA_G" vertex="1">
+          <mxGeometry height="30" width="60" x="462" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;" value="VGA_B" vertex="1">
+          <mxGeometry height="30" width="60" x="462" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;" value="VGA_HS_O" vertex="1">
+          <mxGeometry height="30" width="60" x="462" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=right;verticalAlign=middle;rounded=0;" value="VGA_VS_O" vertex="1">
+          <mxGeometry height="30" width="60" x="462" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="ACLK" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="TVALID" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="TREADY" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="TDATA" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="Pilz2HXUhj6s5QdIc37H-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="TLAST" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="350" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

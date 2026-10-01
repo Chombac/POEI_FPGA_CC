@@ -1,0 +1,70 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="arRPyc_coc-_d8hvhXd9">
+    <mxGraphModel dx="2002" dy="1252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="40" width="960" x="30" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="970" y="110" as="sourcePoint" />
+            <mxPoint x="970" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-4" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="LSB&lt;div&gt;&lt;p style=&quot;margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid&quot;&gt;&lt;font face=&quot;Liberation Sans, sans-serif&quot;&gt;&lt;font&gt;S_AXIS_T_data (0)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="300" x="960" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-5" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="30" y="110" as="sourcePoint" />
+            <mxPoint x="30" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="MSB&lt;div&gt;&lt;p style=&quot;margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid&quot;&gt;&lt;font face=&quot;Liberation Sans, sans-serif&quot;&gt;&lt;font&gt;S_AXIS_T_data (23)&lt;/font&gt;&lt;/font&gt;&lt;/p&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="300" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-11" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;fontColor=#EA6B66;" value="" vertex="1">
+          <mxGeometry height="320" width="50" x="805" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bits associés à la couleur ROUGE" vertex="1">
+          <mxGeometry height="10" width="190" x="735" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-14" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Liberation Sans&amp;quot;, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;S_AXIS_T_data(7) to&amp;nbsp; (0)S_AXIS_T_data (0)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="710" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-16" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="320" width="50" x="485" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bits associés à la couleur VERTE" vertex="1">
+          <mxGeometry height="10" width="190" x="415" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-18" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Liberation Sans&amp;quot;, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;S_AXIS_T_data(15) to&amp;nbsp; (0)S_AXIS_T_data (8)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="250" x="390" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-19" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_2;align=left;labelPosition=right;pointerEvents=1;rotation=-90;" value="" vertex="1">
+          <mxGeometry height="320" width="50" x="165" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Bits associés à la couleur BLEU" vertex="1">
+          <mxGeometry height="10" width="190" x="95" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-21" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: &amp;quot;Liberation Sans&amp;quot;, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(236, 236, 236); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;S_AXIS_T_data(23) to&amp;nbsp; (0)S_AXIS_T_data (16)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="40" width="280" x="40" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="S_AXIS_T_DATA" vertex="1">
+          <mxGeometry height="30" width="320" x="360" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=none;fillColor=#EA6B66;" value="" vertex="1">
+          <mxGeometry height="30" width="280" x="690" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=none;fillColor=#B9E0A5;" value="" vertex="1">
+          <mxGeometry height="30" width="280" x="370" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="PTuu8JW7gBJQai0VD8sM-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;strokeColor=none;fillColor=#CCCCFF;" value="" vertex="1">
+          <mxGeometry height="30" width="280" x="50" y="165" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

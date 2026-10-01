@@ -1,0 +1,37 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running '/tools/xilinx/Vitis_HLS/2020.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'lbo' on host 'isaac' (Linux_x86_64 version 5.4.0-150-generic) on Mon Aug 31 08:38:23 CEST 2026
+INFO: [HLS 200-10] On os Ubuntu 18.04.6 LTS
+INFO: [HLS 200-10] In directory '/mnt/isaac_sbay0/lbo-ws/Temp/FPGA_EXPLEO/hls'
+Sourcing Tcl script '/mnt/isaac_sbay0/lbo-ws/Temp/FPGA_EXPLEO/hls/DMA24b_mm2s_prj/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project DMA24b_mm2s_prj 
+INFO: [HLS 200-10] Opening project '/mnt/isaac_sbay0/lbo-ws/Temp/FPGA_EXPLEO/hls/DMA24b_mm2s_prj'.
+INFO: [HLS 200-1510] Running: set_top DMA24bUnit_mm2s 
+INFO: [HLS 200-1510] Running: add_files ../src/DMA24b_mm2s.cpp -cflags -I../src 
+INFO: [HLS 200-10] Adding design file '../src/DMA24b_mm2s.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -tb ../src/tb.cpp -cflags -I../src -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file '../src/tb.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/mnt/isaac_sbay0/lbo-ws/Temp/FPGA_EXPLEO/hls/DMA24b_mm2s_prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 6.66ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 6.66 -name default 
+INFO: [HLS 200-1510] Running: set_directive_top -name DMA24bUnit_mm2s DMA24bUnit_mm2s 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 31 08:38:29 2026...
+INFO: [HLS 200-802] Generated output file DMA24b_mm2s_prj/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 6.51 seconds. CPU system time: 0.55 seconds. Elapsed time: 8.47 seconds; current allocated memory: 200.945 MB.
