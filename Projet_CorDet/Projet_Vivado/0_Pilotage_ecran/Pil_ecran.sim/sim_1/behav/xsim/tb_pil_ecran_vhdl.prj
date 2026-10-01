@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../src/Conv_Axis_VGA.vhd" \
+"../../../../../TestPatterns/Axi4s_driver.vhd" \
+"../../../../src/tb_pil_ecran.vhd" \
+"../../../../src/tb_conv_Axis_VGA.vhd" \
+
+# Do not sort compile order
+nosort

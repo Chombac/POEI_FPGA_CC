@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 24 17:37:21 2026
+# Process ID: 30644
+# Current directory: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1
+# Command line: vivado.exe -log Conv_axis_vga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Conv_axis_vga.tcl -notrace
+# Log file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1/Conv_axis_vga.vdi
+# Journal file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Conv_axis_vga.tcl -notrace

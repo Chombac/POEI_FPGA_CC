@@ -1,0 +1,304 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 24 17:37:21 2026
+# Process ID: 30644
+# Current directory: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1
+# Command line: vivado.exe -log Conv_axis_vga.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Conv_axis_vga.tcl -notrace
+# Log file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1/Conv_axis_vga.vdi
+# Journal file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Conv_axis_vga.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1145.793 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/0_PIL_Ecran'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/PIL_Ecran'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.cache/ip 
+Command: link_design -top Conv_axis_vga -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1145.793 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/src/Cora-Z7-10-Master.xdc]
+Finished Parsing XDC File [C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/src/Cora-Z7-10-Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1145.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+10 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1145.793 ; gain = 0.000
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.548 . Memory (MB): peak = 1145.793 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1e9f869ec
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1588.137 ; gain = 442.344
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 10ad7080b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 4 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 10ad7080b
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1c7d5cfb9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1c7d5cfb9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1c7d5cfb9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1c7d5cfb9
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               4  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.156 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 246f18144
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1794.156 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 246f18144
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1794.156 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 246f18144
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.156 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.156 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 246f18144
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1794.156 ; gain = 648.363
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1794.156 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1/Conv_axis_vga_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Conv_axis_vga_drc_opted.rpt -pb Conv_axis_vga_drc_opted.pb -rpx Conv_axis_vga_drc_opted.rpx
+Command: report_drc -file Conv_axis_vga_drc_opted.rpt -pb Conv_axis_vga_drc_opted.pb -rpx Conv_axis_vga_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/0_Pilotage_ecran/Pil_ecran.runs/impl_1/Conv_axis_vga_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1837.184 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1a89d6409
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1837.184 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1837.184 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (15) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 15 sites.
+	Term: axis_tdata[4]
+	Term: axis_tdata[5]
+	Term: axis_tdata[6]
+	Term: axis_tdata[7]
+	Term: axis_tdata[12]
+	Term: axis_tdata[13]
+	Term: axis_tdata[14]
+	Term: axis_tdata[15]
+	Term: axis_tdata[20]
+	Term: axis_tdata[21]
+	Term: axis_tdata[22]
+	Term: axis_tdata[23]
+	Term: axis_tvalid
+	Term: locked
+	Term: resetn
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (1) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 15 sites.
+	Term: axis_tdata[4]
+	Term: axis_tdata[5]
+	Term: axis_tdata[6]
+	Term: axis_tdata[7]
+	Term: axis_tdata[12]
+	Term: axis_tdata[13]
+	Term: axis_tdata[14]
+	Term: axis_tdata[15]
+	Term: axis_tdata[20]
+	Term: axis_tdata[21]
+	Term: axis_tdata[22]
+	Term: axis_tdata[23]
+	Term: axis_tvalid
+	Term: locked
+	Term: resetn
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: axis_tready
+
+
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced terminals (16) is greater than number of available sites (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  In   RangeId: 1  has only 0 sites available on device, but needs 15 sites.
+	Term: axis_tdata[4]
+	Term: axis_tdata[5]
+	Term: axis_tdata[6]
+	Term: axis_tdata[7]
+	Term: axis_tdata[12]
+	Term: axis_tdata[13]
+	Term: axis_tdata[14]
+	Term: axis_tdata[15]
+	Term: axis_tdata[20]
+	Term: axis_tdata[21]
+	Term: axis_tdata[22]
+	Term: axis_tdata[23]
+	Term: axis_tvalid
+	Term: locked
+	Term: resetn
+
+
+ IO Group: 1 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 1 sites.
+	Term: axis_tready
+
+
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |    14 | LVCMOS33(14)                                                           |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |     1 | LVCMOS33(1)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |    15 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | VGA_B[0]             | LVCMOS33        | IOB_X0Y26            | U18                  |                      |
+|        | VGA_B[1]             | LVCMOS33        | IOB_X0Y25            | U19                  |                      |
+|        | VGA_B[2]             | LVCMOS33        | IOB_X0Y6             | W18                  |                      |
+|        | VGA_B[3]             | LVCMOS33        | IOB_X0Y5             | W19                  |                      |
+|        | VGA_G[0]             | LVCMOS33        | IOB_X0Y34            | W14                  |                      |
+|        | VGA_G[1]             | LVCMOS33        | IOB_X0Y33            | Y14                  |                      |
+|        | VGA_G[2]             | LVCMOS33        | IOB_X0Y48            | T11                  |                      |
+|        | VGA_G[3]             | LVCMOS33        | IOB_X0Y47            | T10                  |                      |
+|        | VGA_HS_O             | LVCMOS33        | IOB_X0Y14            | V16                  |                      |
+|        | VGA_R[0]             | LVCMOS33        | IOB_X0Y16            | Y18                  |                      |
+|        | VGA_R[1]             | LVCMOS33        | IOB_X0Y15            | Y19                  |                      |
+|        | VGA_R[2]             | LVCMOS33        | IOB_X0Y36            | Y16                  |                      |
+|        | VGA_R[3]             | LVCMOS33        | IOB_X0Y35            | Y17                  |                      |
+|        | VGA_VS_O             | LVCMOS33        | IOB_X0Y13            | W16                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | clk                  | LVCMOS33        | IOB_X0Y74            | H16                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 119dc8a4f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1837.184 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 119dc8a4f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1837.184 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 119dc8a4f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1837.184 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+44 Infos, 2 Warnings, 0 Critical Warnings and 6 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 24 17:37:45 2026...
