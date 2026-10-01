@@ -1,0 +1,24 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s_fetch.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_DMA24b_mm2s_streamout.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_fifo_w12_d2_S.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_fifo_w128_d256_A.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_gmem_m_axi.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_mul_mul_11s_13ns_24_4_1.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_mul_mul_12ns_8ns_20_4_1.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_regslice_both.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s_start_for_DMA24b_mm2s_streamout_U0.vhd" \
+"../../../../Cmd_DMA_2_From_Ref_Design.gen/sources_1/bd/design_1/ipshared/dd22/hdl/vhdl/DMA24bUnit_mm2s.vhd" \
+"../../../bd/design_1/ip/design_1_DMA24bUnit_mm2s_0_0/sim/design_1_DMA24bUnit_mm2s_0_0.vhd" \
+"../../../bd/design_1/ipshared/2734/src/Conv_Axis_VGA.vhd" \
+"../../../bd/design_1/ip/design_1_Conv_axis_vga_0_0/sim/design_1_Conv_axis_vga_0_0.vhd" \
+"../../../bd/design_1/ipshared/d2bf/src/Custom_CMD_PS_PL_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/d2bf/src/Custom_CMD_PS_PL_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_Custom_CMD_PS_PL_v1_0_0_0/sim/design_1_Custom_CMD_PS_PL_v1_0_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort
