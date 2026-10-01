@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/ip/design_1_rst_ps7_0_50M_0/sim/design_1_rst_ps7_0_50M_0.vhd" \
+"../../../../SoCora.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../SoCora.srcs/sources_1/imports/hdl/design_1_wrapper.vhd" \
+"../../../../../src/sim/tb_socora_gpio_stim.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="15376666fs"></ZoomStartTime>
+      <ZoomEndTime time="47676667fs"></ZoomEndTime>
+      <Cursor1Time time="20500000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker time="32094100000" label="" />
+      <marker time="32096020000" label="" />
+      <marker time="30100000" label="" />
+      <marker time="34740000" label="" />
+      <marker time="26260000" label="" />
+      <marker time="20500000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/TB_top/S_CLK_I" type="logic">
+      <obj_property name="ElementShortName">S_CLK_I</obj_property>
+      <obj_property name="ObjectShortName">S_CLK_I</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/S_VGA_HS_O" type="logic">
+      <obj_property name="ElementShortName">S_VGA_HS_O</obj_property>
+      <obj_property name="ObjectShortName">S_VGA_HS_O</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/S_VGA_VS_O" type="logic">
+      <obj_property name="ElementShortName">S_VGA_VS_O</obj_property>
+      <obj_property name="ObjectShortName">S_VGA_VS_O</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/S_VGA_R" type="array">
+      <obj_property name="ElementShortName">S_VGA_R[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_VGA_R[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/S_VGA_B" type="array">
+      <obj_property name="ElementShortName">S_VGA_B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_VGA_B[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/S_VGA_G" type="array">
+      <obj_property name="ElementShortName">S_VGA_G[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_VGA_G[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/hp" type="other">
+      <obj_property name="ElementShortName">hp</obj_property>
+      <obj_property name="ObjectShortName">hp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_top/period" type="other">
+      <obj_property name="ElementShortName">period</obj_property>
+      <obj_property name="ObjectShortName">period</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,14 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+Note: 
+==============================================================
+ tb_environnement -- banc unitaire AXI4-Stream
+   images capturees : 1
+   lignes capturees : 32 (attendu 32)
+   pixels captures  : 20480 (attendu 20480)
+   pixels emis      : 20499
+   fichier ecrit    : ../../../../../src/sim/output/stream_out_0.txt
+ Verification (le diff doit etre VIDE en boucle simple) :
+   diff <(head -32 src/sim/sample_in_gray.txt) src/sim/output/stream_out_0.txt
+==============================================================
+Time: 205205 ns  Iteration: 0  Process: /tb_environnement/p_fin  File: /mnt/isaac_sbay0/lbo-ws/Projects/DVR-008-002/Base_Design_Project/Reference_design_project_2020.2/src/sim/tb_environnement.vhd
