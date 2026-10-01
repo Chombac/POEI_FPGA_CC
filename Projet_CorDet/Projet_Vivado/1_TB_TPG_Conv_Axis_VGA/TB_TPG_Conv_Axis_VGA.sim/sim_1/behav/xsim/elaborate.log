@@ -1,0 +1,33 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 4c6798024c144f168afd8e03a06a917e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot Tb_Test_pil_ecran_behav xil_defaultlib.Tb_Test_pil_ecran xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Conv_axis_vga [\Conv_axis_vga(c_s00_axis_tdata_...]
+Compiling architecture test_tpg_pil_ecran_conv_axis_vga_0_0_arch of entity xil_defaultlib.Test_TPG_Pil_ecran_Conv_axis_vga_0_0 [test_tpg_pil_ecran_conv_axis_vga...]
+Compiling architecture behavioral of entity xil_defaultlib.Top_tpg [top_tpg_default]
+Compiling architecture test_tpg_pil_ecran_top_tpg_0_0_arch of entity xil_defaultlib.Test_TPG_Pil_ecran_Top_tpg_0_0 [test_tpg_pil_ecran_top_tpg_0_0_d...]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=36.5,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.Test_TPG_Pil_ecran_clk_wiz_0_0_c...
+Compiling module xil_defaultlib.Test_TPG_Pil_ecran_clk_wiz_0_0
+Compiling module util_vector_logic_v2_0_1.util_vector_logic_v2_0_1_util_ve...
+Compiling module xil_defaultlib.Test_TPG_Pil_ecran_util_vector_l...
+Compiling architecture structure of entity xil_defaultlib.Test_TPG_Pil_ecran [test_tpg_pil_ecran_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_test_pil_ecran
+Built simulation snapshot Tb_Test_pil_ecran_behav

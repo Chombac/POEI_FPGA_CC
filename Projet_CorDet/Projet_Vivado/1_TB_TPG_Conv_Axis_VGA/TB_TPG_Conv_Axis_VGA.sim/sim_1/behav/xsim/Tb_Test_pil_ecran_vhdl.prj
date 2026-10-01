@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/ipshared/d6c3/src/Conv_Axis_VGA.vhd" \
+"../../../../Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_Conv_axis_vga_0_0/sim/Test_TPG_Pil_ecran_Conv_axis_vga_0_0.vhd" \
+"../../../../Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/ipshared/c202/src/Top_tpg.vhd" \
+"../../../../Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_Top_tpg_0_0/sim/Test_TPG_Pil_ecran_Top_tpg_0_0.vhd" \
+"../../../../Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/sim/Test_TPG_Pil_ecran.vhd" \
+"../../../../Projet_Complet.srcs/sim_1/new/Tb_Test_pil_ecran.vhd" \
+
+# Do not sort compile order
+nosort

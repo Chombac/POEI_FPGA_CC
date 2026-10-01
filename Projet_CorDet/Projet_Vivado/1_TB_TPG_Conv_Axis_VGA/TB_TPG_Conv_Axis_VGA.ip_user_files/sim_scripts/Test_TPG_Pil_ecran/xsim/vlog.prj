@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "../../../../Projet_Complet.gen/sources_1/bd/Test_TPG_Pil_ecran/ipshared/d0f7" \
+"../../../bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_clk_wiz_0_0/Test_TPG_Pil_ecran_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_clk_wiz_0_0/Test_TPG_Pil_ecran_clk_wiz_0_0.v" \
+"../../../bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_util_vector_logic_0_0/sim/Test_TPG_Pil_ecran_util_vector_logic_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

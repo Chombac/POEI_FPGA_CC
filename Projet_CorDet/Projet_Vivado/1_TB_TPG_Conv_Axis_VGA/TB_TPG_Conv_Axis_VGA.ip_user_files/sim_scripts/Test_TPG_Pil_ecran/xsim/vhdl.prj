@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/Test_TPG_Pil_ecran/ipshared/799f/src/Top_tpg.vhd" \
+"../../../bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_Top_tpg_0_0/sim/Test_TPG_Pil_ecran_Top_tpg_0_0.vhd" \
+"../../../bd/Test_TPG_Pil_ecran/ipshared/2734/src/Conv_Axis_VGA.vhd" \
+"../../../bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_Conv_axis_vga_0_1/sim/Test_TPG_Pil_ecran_Conv_axis_vga_0_1.vhd" \
+"../../../bd/Test_TPG_Pil_ecran/sim/Test_TPG_Pil_ecran.vhd" \
+
+nosort

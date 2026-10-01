@@ -1,0 +1,33 @@
+{
+	"version": "1.0",
+	"modules": {
+		"Test_TPG_Pil_ecran": {
+			"proto_instances": {
+				"/Conv_axis_vga_0/s00_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "s00_axis_aclk"},
+						"ARESETN": { "actual": "s00_axis_aresetn"},
+						"TDATA": { "actual": "s00_axis_tdata"},
+						"TLAST": { "actual": "s00_axis_tlast"},
+						"TREADY": { "actual": "s00_axis_tready"},
+						"TSTRB": { "actual": "s00_axis_tstrb"},
+						"TVALID": { "actual": "s00_axis_tvalid"}
+					}
+				},
+				"/Top_tpg_0/axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "Clk"},
+						"ARESETN": { "actual": "resetn"},
+						"TDATA": { "actual": "axis_tdata"},
+						"TLAST": { "actual": "axis_tlast"},
+						"TREADY": { "actual": "axis_tready"},
+						"TSTRB": { "actual": "axis_tstrb"},
+						"TVALID": { "actual": "axis_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+-- Date        : Wed Sep  9 16:04:02 2026
+-- Host        : MSI running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/General/Projet_Complet.gen/sources_1/bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_Top_tpg_0_0/Test_TPG_Pil_ecran_Top_tpg_0_0_stub.vhdl
+-- Design      : Test_TPG_Pil_ecran_Top_tpg_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7z010clg400-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Test_TPG_Pil_ecran_Top_tpg_0_0 is
+  Port ( 
+    Clk : in STD_LOGIC;
+    resetn : in STD_LOGIC;
+    locked : in STD_LOGIC;
+    axis_tready : in STD_LOGIC;
+    axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    axis_tlast : out STD_LOGIC;
+    axis_tvalid : out STD_LOGIC;
+    Ctrl_vertical : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    Ctrl_horizontal : out STD_LOGIC_VECTOR ( 11 downto 0 )
+  );
+
+end Test_TPG_Pil_ecran_Top_tpg_0_0;
+
+architecture stub of Test_TPG_Pil_ecran_Top_tpg_0_0 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "Clk,resetn,locked,axis_tready,axis_tdata[23:0],axis_tlast,axis_tvalid,Ctrl_vertical[11:0],Ctrl_horizontal[11:0]";
+attribute x_core_info : string;
+attribute x_core_info of stub : architecture is "Top_tpg,Vivado 2020.2";
+begin
+end;

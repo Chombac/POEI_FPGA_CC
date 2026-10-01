@@ -1,0 +1,1 @@
+vopt +acc=npr -l elaborate.log -L xpm -L xil_defaultlib -L util_vector_logic_v2_0_1 -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.Test_TPG_Pil_ecran xil_defaultlib.glbl -o Test_TPG_Pil_ecran_opt

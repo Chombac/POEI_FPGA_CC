@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/General/Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/ipshared/c202/src/Top_tpg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Top_tpg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/General/Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/ip/Test_TPG_Pil_ecran_Top_tpg_0_0/sim/Test_TPG_Pil_ecran_Top_tpg_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Test_TPG_Pil_ecran_Top_tpg_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/General/Projet_Complet.ip_user_files/bd/Test_TPG_Pil_ecran/sim/Test_TPG_Pil_ecran.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Test_TPG_Pil_ecran'
