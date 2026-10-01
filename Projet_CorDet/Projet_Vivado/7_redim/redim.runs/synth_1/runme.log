@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log grayscale_filter.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source grayscale_filter.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source grayscale_filter.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/7_redim'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/6_Gaussian_filter'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/5_Grayscale_converter'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/7_redim/redim.cache/ip 
+Command: synth_design -top grayscale_filter -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28116
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1144.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-439] module 'grayscale_filter' not found
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1144.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 1 Warnings, 0 Critical Warnings and 2 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 18:35:07 2026...

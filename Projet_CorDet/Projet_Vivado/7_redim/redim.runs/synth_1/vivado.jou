@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 18:35:00 2026
+# Process ID: 41016
+# Current directory: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/7_redim/redim.runs/synth_1
+# Command line: vivado.exe -log grayscale_filter.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source grayscale_filter.tcl
+# Log file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/7_redim/redim.runs/synth_1/grayscale_filter.vds
+# Journal file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/7_redim/redim.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source grayscale_filter.tcl -notrace
