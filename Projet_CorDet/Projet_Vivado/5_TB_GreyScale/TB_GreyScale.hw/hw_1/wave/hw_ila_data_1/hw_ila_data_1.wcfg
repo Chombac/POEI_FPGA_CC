@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_TB_GreyScale/TB_GreyScale.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="510fs"></ZoomStartTime>
+      <ZoomEndTime time="517fs"></ZoomEndTime>
+      <Cursor1Time time="513fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="228"></NameColumnWidth>
+      <ValueColumnWidth column_width="100"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/proc_sys_reset_0_peripheral_aresetn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/proc_sys_reset_0_peripheral_aresetn</obj_property>
+      <obj_property name="ObjectShortName">proc_sys_reset_0_peripheral_aresetn</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider10">
+   </wvobject>
+   <wvobject fp_name="design_1_i/Switch_flux1_Axis_tdata_out" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/Switch_flux1_Axis_tdata_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Switch_flux1_Axis_tdata_out[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/grayscale_filter_0_Axis_Tdata_out" type="array">
+      <obj_property name="ElementShortName">design_1_i/grayscale_filter_0_Axis_Tdata_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">grayscale_filter_0_Axis_Tdata_out[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/grayscale_filter_0_Axis_Tlast_out" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/grayscale_filter_0_Axis_Tlast_out</obj_property>
+      <obj_property name="ObjectShortName">grayscale_filter_0_Axis_Tlast_out</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/grayscale_filter_0_Axis_Tvalid_out" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/grayscale_filter_0_Axis_Tvalid_out</obj_property>
+      <obj_property name="ObjectShortName">grayscale_filter_0_Axis_Tvalid_out</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider11">
+   </wvobject>
+   <wvobject fp_name="design_1_i/Switch_flux1_Axis_tlast_out" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/Switch_flux1_Axis_tlast_out</obj_property>
+      <obj_property name="ObjectShortName">Switch_flux1_Axis_tlast_out</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/Switch_flux1_Axis_tvalid_out" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/Switch_flux1_Axis_tvalid_out</obj_property>
+      <obj_property name="ObjectShortName">Switch_flux1_Axis_tvalid_out</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/grayscale_filter_0_Axis_Tready_in" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/grayscale_filter_0_Axis_Tready_in</obj_property>
+      <obj_property name="ObjectShortName">grayscale_filter_0_Axis_Tready_in</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

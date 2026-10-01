@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../grayscale_filter.vhd" \
+"../../../../TB_grayscale_filter.vhd" \
+
+# Do not sort compile order
+nosort

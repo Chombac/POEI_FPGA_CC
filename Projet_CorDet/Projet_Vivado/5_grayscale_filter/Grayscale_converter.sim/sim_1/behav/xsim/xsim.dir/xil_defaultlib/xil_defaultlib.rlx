@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/Grayscale_converter.srcs/sim_1/new/TB_Golden_ref.vhd,1790806096,vhdl,,,,tb_golden_ref,,,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/TB_grayscale_filter.vhd,1790627931,vhdl,,,,tb_grayscale_filter,,,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/grayscale_filter.vhd,1790805577,vhdl,,,,grayscale_filter,,,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/TestPatterns/TestPatterns/Axi4s_driver.vhd,1790603557,vhdl,,,,axi4s_driver,,,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/TestPatterns/TestPatterns/Axi4s_monitor.vhd,1790603557,vhdl,,,,axi4s_monitor,,,,,,,,

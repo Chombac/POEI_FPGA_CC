@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Golden_ref_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Golden_ref" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4000998010fs"></ZoomStartTime>
+      <ZoomEndTime time="4001000398fs"></ZoomEndTime>
+      <Cursor1Time time="4001000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="183"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/TB_Golden_ref/S_clk" type="logic">
+      <obj_property name="ElementShortName">S_clk</obj_property>
+      <obj_property name="ObjectShortName">S_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_resetn" type="logic">
+      <obj_property name="ElementShortName">S_resetn</obj_property>
+      <obj_property name="ObjectShortName">S_resetn</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+      <obj_property name="label">Input</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_data_in" type="array">
+      <obj_property name="ElementShortName">S_axis_data_in[23:0]</obj_property>
+      <obj_property name="ObjectShortName">S_axis_data_in[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_Tready_in" type="logic">
+      <obj_property name="ElementShortName">S_axis_Tready_in</obj_property>
+      <obj_property name="ObjectShortName">S_axis_Tready_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_Tvalid_in" type="logic">
+      <obj_property name="ElementShortName">S_axis_Tvalid_in</obj_property>
+      <obj_property name="ObjectShortName">S_axis_Tvalid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_Tlast_in" type="logic">
+      <obj_property name="ElementShortName">S_axis_Tlast_in</obj_property>
+      <obj_property name="ObjectShortName">S_axis_Tlast_in</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider25">
+      <obj_property name="label">Output</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_data_out" type="array">
+      <obj_property name="ElementShortName">S_axis_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S_axis_data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_Tready_out" type="logic">
+      <obj_property name="ElementShortName">S_axis_Tready_out</obj_property>
+      <obj_property name="ObjectShortName">S_axis_Tready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_Tvalid_out" type="logic">
+      <obj_property name="ElementShortName">S_axis_Tvalid_out</obj_property>
+      <obj_property name="ObjectShortName">S_axis_Tvalid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_axis_Tlast_out" type="logic">
+      <obj_property name="ElementShortName">S_axis_Tlast_out</obj_property>
+      <obj_property name="ObjectShortName">S_axis_Tlast_out</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider25">
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_done_driver" type="logic">
+      <obj_property name="ElementShortName">S_done_driver</obj_property>
+      <obj_property name="ObjectShortName">S_done_driver</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/axi4s_driver_0/s_tlast" type="logic">
+      <obj_property name="ElementShortName">s_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_tlast</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_frame_cnt_driver" type="other">
+      <obj_property name="ElementShortName">S_frame_cnt_driver</obj_property>
+      <obj_property name="ObjectShortName">S_frame_cnt_driver</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_pixel_cnt_driver" type="other">
+      <obj_property name="ElementShortName">S_pixel_cnt_driver</obj_property>
+      <obj_property name="ObjectShortName">S_pixel_cnt_driver</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider26">
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_img_cnt_monitor" type="other">
+      <obj_property name="ElementShortName">S_img_cnt_monitor</obj_property>
+      <obj_property name="ObjectShortName">S_img_cnt_monitor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_line_cnt_monitor" type="other">
+      <obj_property name="ElementShortName">S_line_cnt_monitor</obj_property>
+      <obj_property name="ObjectShortName">S_line_cnt_monitor</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/S_done_monitor" type="logic">
+      <obj_property name="ElementShortName">S_done_monitor</obj_property>
+      <obj_property name="ObjectShortName">S_done_monitor</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider171">
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/dut/Axis_Tready_out" type="logic">
+      <obj_property name="ElementShortName">Axis_Tready_out</obj_property>
+      <obj_property name="ObjectShortName">Axis_Tready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/dut/S_Axis_Tready_reg_in" type="logic">
+      <obj_property name="ElementShortName">S_Axis_Tready_reg_in</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_Tready_reg_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/dut/Axis_Tready_in" type="logic">
+      <obj_property name="ElementShortName">Axis_Tready_in</obj_property>
+      <obj_property name="ObjectShortName">Axis_Tready_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/dut/S_Axis_Tready_reg_out" type="logic">
+      <obj_property name="ElementShortName">S_Axis_Tready_reg_out</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_Tready_reg_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Golden_ref/dut/Axis_Tready_out" type="logic">
+      <obj_property name="ElementShortName">Axis_Tready_out</obj_property>
+      <obj_property name="ObjectShortName">Axis_Tready_out</obj_property>
+   </wvobject>
+</wave_config>

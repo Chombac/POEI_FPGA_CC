@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../grayscale_filter.vhd" \
+"../../../../TB_grayscale_filter.vhd" \
+"../../../../Grayscale_converter.srcs/sim_1/new/TB_Golden_ref.vhd" \
+"../../../../../TestPatterns/TestPatterns/Axi4s_monitor.vhd" \
+"../../../../../TestPatterns/TestPatterns/Axi4s_driver.vhd" \
+
+# Do not sort compile order
+nosort

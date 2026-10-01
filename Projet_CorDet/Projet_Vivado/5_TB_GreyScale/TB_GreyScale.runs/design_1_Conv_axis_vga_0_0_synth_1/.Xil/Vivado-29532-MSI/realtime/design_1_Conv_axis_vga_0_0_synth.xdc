@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_TB_GreyScale/TB_GreyScale.gen/sources_1/bd/design_1/ip/design_1_Conv_axis_vga_0_0/src/Cora-Z7-10-Master.xdc rfile:../../../../../TB_GreyScale.gen/sources_1/bd/design_1/ip/design_1_Conv_axis_vga_0_0/src/Cora-Z7-10-Master.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:8 export:INPUT save:INPUT read:READ} [current_design]
+create_clock -period 8.000 -name sys_clk_pin -waveform {0.000 4.000} -add [get_ports clk]
+set_property src_info {type:TCL file:{} line:-1 export:INPUT save:INPUT read:READ} [current_design]
+set_property KEEP_HIERARCHY SOFT [get_cells U0]

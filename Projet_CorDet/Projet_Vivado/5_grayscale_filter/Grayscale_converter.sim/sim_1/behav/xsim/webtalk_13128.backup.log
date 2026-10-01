@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 23:16:44 2026
+# Process ID: 13128
+# Current directory: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/Grayscale_converter.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/Grayscale_converter.sim/sim_1/behav/xsim/xsim.dir/TB_Golden_ref_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/Grayscale_converter.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/Grayscale_converter.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/5_grayscale_filter/Grayscale_converter.sim/sim_1/behav/xsim/xsim.dir/TB_Golden_ref_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep 30 23:16:44 2026...
