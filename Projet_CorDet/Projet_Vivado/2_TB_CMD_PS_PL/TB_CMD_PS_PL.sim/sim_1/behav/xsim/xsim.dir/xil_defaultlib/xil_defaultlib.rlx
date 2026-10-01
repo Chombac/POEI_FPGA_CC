@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/TB_CMD_PS_PL/TB_CMD_PS_PL.sim/sim_1/behav/xsim/glbl.v,1789050970,verilog,,,,glbl,,axi_vip_v1_1_8;processing_system7_vip_v1_0_10;xilinx_vip,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/rdaxis/Reference_design_project_2020.2/src/sim/Axi4s_driver.vhd,1789050966,vhdl,,,,axi4s_driver,,,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/rdaxis/Reference_design_project_2020.2/src/sim/Axi4s_monitor.vhd,1789050966,vhdl,,,,axi4s_monitor,,,,,,,,
+C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/rdaxis/Reference_design_project_2020.2/src/sim/tb_environnement.vhd,1789050966,vhdl,,,,tb_environnement,,,,,,,,
