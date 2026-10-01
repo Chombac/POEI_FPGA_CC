@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Gaussian_filter.srcs/sources_1/new/Gaussian_filter.vhd" \
+"../../../../Gaussian_filter.srcs/sim_1/new/TB_Gaussian_delai.vhd" \
+
+# Do not sort compile order
+nosort

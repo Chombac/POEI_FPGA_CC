@@ -1,0 +1,31 @@
+// Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+// --------------------------------------------------------------------------------
+// Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+// Date        : Tue Sep 29 12:01:21 2026
+// Host        : MSI running 64-bit major release  (build 9200)
+// Command     : write_verilog -force -mode synth_stub -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
+//               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ design_1_Gaussian_filter_0_0_stub.v
+// Design      : design_1_Gaussian_filter_0_0
+// Purpose     : Stub declaration of top-level module interface
+// Device      : xc7z010clg400-1
+// --------------------------------------------------------------------------------
+
+// This empty module with port declaration file causes synthesis tools to infer a black box for IP.
+// The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
+// Please paste the declaration into a Verilog source file or add the file as an additional source.
+(* x_core_info = "Gaussian_filter,Vivado 2020.2" *)
+module decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix(top_clk, top_resetn, axis_Tdata_in, 
+  axis_Tready_in, axis_Tvalid_in, axis_Tlast_in, axis_Tdata_out, axis_Tready_out, 
+  axis_Tvalid_out, axis_Tlast_out)
+/* synthesis syn_black_box black_box_pad_pin="top_clk,top_resetn,axis_Tdata_in[7:0],axis_Tready_in,axis_Tvalid_in,axis_Tlast_in,axis_Tdata_out[7:0],axis_Tready_out,axis_Tvalid_out,axis_Tlast_out" */;
+  input top_clk;
+  input top_resetn;
+  input [7:0]axis_Tdata_in;
+  output axis_Tready_in;
+  input axis_Tvalid_in;
+  input axis_Tlast_in;
+  output [7:0]axis_Tdata_out;
+  input axis_Tready_out;
+  output axis_Tvalid_out;
+  output axis_Tlast_out;
+endmodule

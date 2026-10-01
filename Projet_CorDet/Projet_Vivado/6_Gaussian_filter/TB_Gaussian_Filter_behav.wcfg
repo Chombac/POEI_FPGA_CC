@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TB_Gauss_filt_2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TB_Gauss_filt_2" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="12001000001fs"></ZoomEndTime>
+      <Cursor1Time time="1009462300fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="243"></NameColumnWidth>
+      <ValueColumnWidth column_width="117"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
+   <wave_markers>
+      <marker time="0" label="" />
+   </wave_markers>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_resetn" type="logic">
+      <obj_property name="ElementShortName">S_resetn</obj_property>
+      <obj_property name="ObjectShortName">S_resetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_clk" type="logic">
+      <obj_property name="ElementShortName">S_clk</obj_property>
+      <obj_property name="ObjectShortName">S_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/S_lign_cpt" type="other">
+      <obj_property name="ElementShortName">S_lign_cpt</obj_property>
+      <obj_property name="ObjectShortName">S_lign_cpt</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/S_col_cpt" type="other">
+      <obj_property name="ElementShortName">S_col_cpt</obj_property>
+      <obj_property name="ObjectShortName">S_col_cpt</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider83">
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tdata_in" type="array">
+      <obj_property name="ElementShortName">S_Axis_tdata_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tdata_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tlast_in" type="logic">
+      <obj_property name="ElementShortName">S_Axis_tlast_in</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tlast_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tready_in" type="logic">
+      <obj_property name="ElementShortName">S_Axis_tready_in</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tready_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tvalid_in" type="logic">
+      <obj_property name="ElementShortName">S_Axis_tvalid_in</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tvalid_in</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider85">
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/s_reset_flag" type="logic">
+      <obj_property name="ElementShortName">s_reset_flag</obj_property>
+      <obj_property name="ObjectShortName">s_reset_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tdata_out" type="array">
+      <obj_property name="ElementShortName">S_Axis_tdata_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tdata_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tlast_out" type="logic">
+      <obj_property name="ElementShortName">S_Axis_tlast_out</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tlast_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tready_out" type="logic">
+      <obj_property name="ElementShortName">S_Axis_tready_out</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/S_Axis_tvalid_out" type="logic">
+      <obj_property name="ElementShortName">S_Axis_tvalid_out</obj_property>
+      <obj_property name="ObjectShortName">S_Axis_tvalid_out</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider86">
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/int_interm_value_1" type="other">
+      <obj_property name="ElementShortName">int_interm_value_1</obj_property>
+      <obj_property name="ObjectShortName">int_interm_value_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/int_interm_value_2" type="other">
+      <obj_property name="ElementShortName">int_interm_value_2</obj_property>
+      <obj_property name="ObjectShortName">int_interm_value_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/int_interm_value_3" type="other">
+      <obj_property name="ElementShortName">int_interm_value_3</obj_property>
+      <obj_property name="ObjectShortName">int_interm_value_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/int_final_value" type="other">
+      <obj_property name="ElementShortName">int_final_value</obj_property>
+      <obj_property name="ObjectShortName">int_final_value</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_1" type="array">
+      <obj_property name="ElementShortName">SV_data_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_2" type="array">
+      <obj_property name="ElementShortName">SV_data_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_3" type="array">
+      <obj_property name="ElementShortName">SV_data_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_4" type="array">
+      <obj_property name="ElementShortName">SV_data_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_5" type="array">
+      <obj_property name="ElementShortName">SV_data_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_6" type="array">
+      <obj_property name="ElementShortName">SV_data_6[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_6[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_7" type="array">
+      <obj_property name="ElementShortName">SV_data_7[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_7[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_8" type="array">
+      <obj_property name="ElementShortName">SV_data_8[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_8[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_9" type="array">
+      <obj_property name="ElementShortName">SV_data_9[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_9[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/SV_data_out" type="array">
+      <obj_property name="ElementShortName">SV_data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SV_data_out[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/t_line_mem_1" type="array">
+      <obj_property name="ElementShortName">t_line_mem_1[0:639][7:0]</obj_property>
+      <obj_property name="ObjectShortName">t_line_mem_1[0:639][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TB_Gauss_filt_2/dut/t_line_mem_2" type="array">
+      <obj_property name="ElementShortName">t_line_mem_2[0:639][7:0]</obj_property>
+      <obj_property name="ObjectShortName">t_line_mem_2[0:639][7:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider669">
+   </wvobject>
+</wave_config>
