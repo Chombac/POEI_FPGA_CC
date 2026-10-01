@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Sep 24 16:50:18 2026
+# Process ID: 22828
+# Current directory: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/1_TPG
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent34552 C:\Users\cleme\Desktop\POEI\Cours\Projet_Corner_detect\vivado_proj\1_TPG\Test_pattern_generator.xpr
+# Log file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/1_TPG/vivado.log
+# Journal file: C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/1_TPG\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/vivado_proj/1_TPG/Test_pattern_generator.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+ipx::package_project -root_dir C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/1_TPG -vendor xilinx.com -library user -taxonomy /UserIP -import_files -set_current false -force
+ipx::unload_core c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/1_TPG/component.xml
+ipx::edit_ip_in_project -upgrade true -name tmp_edit_project -directory C:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/1_TPG c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/1_TPG/component.xml
+current_project Test_pattern_generator
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project tmp_edit_project
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+set_property  ip_repo_paths  {c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/1_TPG c:/Users/cleme/Desktop/POEI/Cours/Projet_Corner_detect/ip_repo/TPG} [current_project]
+update_ip_catalog

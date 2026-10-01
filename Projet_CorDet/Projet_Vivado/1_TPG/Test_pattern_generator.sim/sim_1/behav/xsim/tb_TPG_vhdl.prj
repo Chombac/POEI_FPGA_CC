@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Test_pattern_generator.srcs/sources_1/new/Top_tpg.vhd" \
+"../../../../Test_pattern_generator.srcs/sim_1/new/tb_TPG.vhd" \
+
+# Do not sort compile order
+nosort
